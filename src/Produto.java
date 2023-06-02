@@ -26,15 +26,17 @@ public class Produto {
     }
 
     // Método para adicionar uma quantidade ao produto
-    public int adicionarQuantidade(int quantidade) {
-        this.quantidade += quantidade;
+    public int adicionarQuantidade(int Quantidade) {
+        this.quantidade += Quantidade;
+        System.out.println("Foi adicionado " + Quantidade + " unidades de " + nome + ". Agora temos " + quantidade + " unidades no estoque.");
         return quantidade;
     }
 
     // Método para remover uma quantidade do produto
-    public int removerQuantidade(int quantidade) {
-        if (this.quantidade >= quantidade) {
-            this.quantidade -= quantidade;
+    public int removerQuantidade(int Quantidade) {
+        if (this.quantidade >= Quantidade) {
+            this.quantidade -= Quantidade;
+            System.out.println("Foi removido " + Quantidade + " unidades de " + nome + ". Agora temos " + quantidade + " unidades no estoque.");
         } else {
             System.out.println("Não é possível remover a quantidade especificada. Quantidade insuficiente em estoque.");
         }
