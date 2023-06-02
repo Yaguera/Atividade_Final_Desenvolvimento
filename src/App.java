@@ -7,8 +7,8 @@ public class App {
         produto.adicionarQuantidade(100);
         produto.removerQuantidade(50);
        
-        produto2.adicionarQuantidade(100);
-        produto2.removerQuantidade(50);
+        produto2.adicionarQuantidade(230);
+        produto2.removerQuantidade(127);
        
 
         
