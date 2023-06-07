@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class Fornecedor {
     private String nome;
     private String endereco;
@@ -46,14 +45,7 @@ public class Fornecedor {
    }
     
    public void cadastrarFornecedor() {
-    Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Digite o nome do fornecedor: ");
-        String input = scanner.nextLine();
-        
-        System.out.println("Você digitou: " + input);
-        
-        scanner.close();
-    
+    System.out.println("Fornecedor " + nome + " cadastrado com sucesso.");
    }
+   
 } 
