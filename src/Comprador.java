@@ -1,8 +1,8 @@
 
 public class Comprador{
-    int idComprador;
-    String nomeComprador;
-    String telefone;
+    private int idComprador;
+    private String nomeComprador;
+    private String telefone;
     
     public int getIdComprador() {
         return idComprador;

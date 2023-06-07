@@ -1,18 +1,22 @@
 
-public class Pedido extends Fornecedor{
+public class Pedido extends Comprador{
     private int numeroDoPedido;
     private String fornecedor;
     private String produto;
     private int quantidade;
+    private double valorUnitario;
 
-    public Pedido(int numeroDoPedido, String fornecedor, String produto, int quantidade) {
-        super();
+    //contrutor
+    public Pedido(int numeroDoPedido, String fornecedor, String produto, int quantidade, double valorUnitario) {
+        super(quantidade, fornecedor, produto);
         this.numeroDoPedido = numeroDoPedido;
         this.fornecedor = fornecedor;
         this.produto = produto;
         this.quantidade = quantidade;
+        this.valorUnitario = valorUnitario;
     }
 
+    //Get's and set's
     public int getNumeroDoPedido() {
         return numeroDoPedido;
     }
@@ -45,16 +49,22 @@ public class Pedido extends Fornecedor{
         this.quantidade = quantidade;
     }
 
-    // Método
-
-    public void lancarPedido() {
-        System.out.println("Pedido Lançado");
+    public double getvalorUnitario() {
+        return valorUnitario;
     }
 
-    public void abastecerEstoque() {
-        System.out.println("Estoque atualizado!");
-        cadastrarFornecedor();
-        
+    public void setvalorUnitario(double valorUnitario) {
+        this.valorUnitario = valorUnitario;
+    }
+
+    // Métodos
+
+    public void lancarPedido() {
+        System.out.println("Pedido Lançado por: " + getNomeComprador());
+    }
+
+    public void valorTotalPedido() {
+        System.out.println("O valor total do pedido é de: R$" + quantidade*valorUnitario);
     }
 
 }

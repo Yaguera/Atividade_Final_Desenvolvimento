@@ -42,4 +42,10 @@ public class Produto {
         }
         return quantidade;
     }
+
+    public void inventariarEstoque() {
+        System.out.println("Existem " + quantidade + "unidades em estoque.");
+    }
+
+
 }
