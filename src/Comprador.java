@@ -1,8 +1,8 @@
 
 public class Comprador{
-    private int idComprador;
-    private String nomeComprador;
-    private String telefone;
+    int idComprador;
+    String nomeComprador;
+    String telefone;
     
     public int getIdComprador() {
         return idComprador;
@@ -35,15 +35,13 @@ public class Comprador{
     }
 
 
-    public void cadastrarComprador(int idComprador, String telefone){
+    public void cadastrarFornecedor(int idComprador, String telefone){
         System.out.println(idComprador + "Seu cadastro foi realizado com sucesso!");
     }
 
-   public void pedidoComprador(String nomeComprador){
+   public void fazerPedido(String nomeComprador){
         System.out.println("Olá," + nomeComprador + ". Seu pedido foi inciado!");
     }
-
-   
 
      
 
