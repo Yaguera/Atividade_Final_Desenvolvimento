@@ -35,13 +35,15 @@ public class Comprador{
     }
 
 
-    public void cadastrarFornecedor(int idComprador, String telefone){
+    public void cadastrarComprador(int idComprador, String telefone){
         System.out.println(idComprador + "Seu cadastro foi realizado com sucesso!");
     }
 
-   public void fazerPedido(String nomeComprador){
+   public void pedidoComprador(String nomeComprador){
         System.out.println("Olá," + nomeComprador + ". Seu pedido foi inciado!");
     }
+
+   
 
      
 
