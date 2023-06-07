@@ -34,14 +34,16 @@ public class Comprador{
         this.telefone = telefone;
     }
 
-    //Métodos 
-   /*  public int fazerPedido(int idComprador){
 
+    public void cadastroFornecedor(int idComprador, String telefone){
+        System.out.println(idComprador + "Seu cadastro foi realizado com sucesso!");
     }
 
-    public int cadastroFornecedor(String nomeComprador){
+   public void fazerPedido(String nomeComprador){
+        System.out.println("Olá," + nomeComprador + ". Seu pedido foi inciado!");
+    }
 
-    } */
+     
 
 
 }
