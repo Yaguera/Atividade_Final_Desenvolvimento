@@ -1,8 +1,7 @@
-
-public class Comprador{
+ public class Comprador extends Fornecedor{
     int idComprador;
     String nomeComprador;
-    String telefone;
+    String telefoneComprador;
     
     public int getIdComprador() {
         return idComprador;
@@ -21,17 +20,19 @@ public class Comprador{
     }
 
     public String getTelefone() {
-        return telefone;
+        return telefoneComprador;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setTelefone(String telefoneComprador) {
+        this.telefoneComprador = telefoneComprador;
     }
 
-    public Comprador(int idComprador, String nomeComprador, String telefone) {
+    public Comprador(int idComprador, String nomeComprador, String telefoneComprador) {
+        super(nomeComprador, nomeComprador, telefoneComprador, telefoneComprador);
         this.idComprador = idComprador;
         this.nomeComprador = nomeComprador;
-        this.telefone = telefone;
+        this.telefoneComprador = telefoneComprador;
+        
     }
 
 
@@ -43,6 +44,9 @@ public class Comprador{
         System.out.println("Olá," + nomeComprador + ". Seu pedido foi inciado!");
     }
 
+   public void ligarParaFornecedor(String telefone){
+        System.out.println("Ligar para o" + getTelefone() + " do fornecedor!");
+    } 
      
 
 

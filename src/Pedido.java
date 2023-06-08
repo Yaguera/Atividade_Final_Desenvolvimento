@@ -67,4 +67,7 @@ public class Pedido extends Comprador{
         System.out.println("O valor total do pedido é de: R$" + quantidade*valorUnitario);
     }
 
+    public void atualizaComprador(){
+        System.out.println("Olá, "+ nomeComprador + "O seu status do pedido é: " + numeroDoPedido);
+    }
 }
