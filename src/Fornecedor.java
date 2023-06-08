@@ -1,8 +1,10 @@
+import java.util.Scanner;
 public class Fornecedor {
     private String nome;
     private String endereco;
     private String telefone;
     private String email;
+    private Produto produto;
 
     public Fornecedor (String nome, String endereco, String telefone, String email) {
         this.nome = nome;
@@ -34,6 +36,15 @@ public class Fornecedor {
     public void setEmail (String email) {
         this.email = email;
     }
+     // Getters e setters
+
+     public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
+    }
 
     // Método para solicitar o reabastecimento de determinado produto
     public void solicitarReabastecimento(String produto, int quantidade) {
@@ -45,7 +56,31 @@ public class Fornecedor {
    }
     
    public void cadastrarFornecedor() {
-    System.out.println("Fornecedor " + nome + " cadastrado com sucesso.");
+    Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o nome do fornecedor: ");
+        String input = scanner.nextLine();
+        
+        System.out.println("Você digitou: " + input);
+        
+        scanner.close();
+    
    }
-   
-} 
+
+// Método para chamar o método de adicionarQuantidade da classe Produto
+public void chamarMetodoProduto() {
+    if (produto != null) {
+        produto.adicionarQuantidade(10); // Exemplo de chamada de método da classe Produto
+    } else {
+        System.out.println("Nenhum produto associado a este fornecedor.");
+    }
+}
+}
+
+
+
+
+
+
+    
+
